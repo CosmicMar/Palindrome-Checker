@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  /* (62.5/100) * 16px = 10px */
+  -webkit-text-size-adjust: none;
+  /* for iOS Safari */
+  text-size-adjust: none;
+  /* for other mobile browsers */
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.6rem, 1.407rem + 0.494vw, 2rem);
+  cursor: default;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #EEE7EE;
+  text-align: center;
+  row-gap: 5rem;
+}
+
+.title {
+  font-size: clamp(3.8rem, 2.741rem + 2.716vw, 6rem);
+  color: #6B4C6B;
+}
+
+.palindrome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 2px 0px rgba(89,62,89,0.16), 0px 0px 4px 1px rgba(89,62,89,0.14), 0px 0px 6px 2px rgba(89, 62, 89, 0.12), 0px 0px 8px 3px rgba(89, 62, 89, 0.1), 0px 0px 20px 18px rgba(89,62,89,0.08);
+}
+
+.word-input {
+  padding-inline: 1rem;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to bottom,#bd9fbd42,#bd9fbd88 ,#6b4c6b) border-box;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  line-height: 2;
+  font-size: smaller;
+  transition: 0.5s linear 0s;
+}
+
+.word-input:focus-visible {
+  outline: none;
+}
+
+
+.btn {
+  width: 60%;
+  padding: 0.2rem;
+  border: 2px solid #543B54;
+  border-radius: 5px;
+  color: white;
+  background-color: #543B54;
+  box-shadow: 0px 0px 2px 0px rgba(89,62,89,0.16), 0px 0px 4px 1px rgba(89,62,89,0.14), 0px 0px 6px 2px rgba(89, 62, 89, 0.12);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  border: 2px solid #b18fb1;
+}
+
+.detail {
+  font-size: smaller;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.411);
+}
+
+.result-container {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+
+dfn, strong {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.definition-container {
+  width: clamp(23rem, 14.815rem + 20.988vw, 40rem);
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #5F445F;
+  box-shadow: 0px 0px 2px 0px rgba(89,62,89,0.16), 0px 0px 4px 1px rgba(89,62,89,0.14), 0px 0px 6px 2px rgba(89, 62, 89, 0.12), 0px 0px 8px 3px rgba(89, 62, 89, 0.1), 0px 0px 20px 18px rgba(89,62,89,0.08);
+  font-size: clamp(1.2rem, 1.007rem + 0.494vw, 1.6rem);
+  font-weight: 300;
+  color: white;
+}
